@@ -1,4 +1,5 @@
 # Music Genre Classification Using Deep Learning
+![image](https://github.com/user-attachments/assets/e1a9625a-7cdd-471c-902b-3dc49cd263ce)
 
 ## Overview
 
