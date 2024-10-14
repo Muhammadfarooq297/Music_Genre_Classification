@@ -7,9 +7,9 @@ import numpy as np
 from tensorflow.image import resize
 
 #Function
-@st.cache_resource()
+@st.cache_resource()        #For caching model
 def load_model():
-  model = tf.keras.models.load_model("Trained_model.keras")
+  model = tf.keras.models.load_model("Trained_model.h5")
   return model
 
 
@@ -132,7 +132,7 @@ elif(app_mode=="Prediction"):
     st.header("Model Prediction")
     test_mp3 = st.file_uploader("Upload an audio file", type=["mp3"])
     if test_mp3 is not None:
-            filepath = 'Test_Music/'+test_mp3.name
+            filepath = "Test_Music/" + test_mp3.name
             
 
     #Show Button
